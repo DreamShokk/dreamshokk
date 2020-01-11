@@ -49,6 +49,7 @@ public class felad1 {
                 System.out.println("Kettesekből több van, mint ötösökből.");
                 out2.println("Kettesekből több van, mint ötösökből.");
             }
+            //c)
             for(int i=n-1;i>=0;i--){
                 System.out.println(t[i]);
                 out2.println(t[i]);
