@@ -1,0 +1,37 @@
+int s,b,c,d,e;
+        s=(int)(Math.random()90+1);
+        do{
+            b=(int)(Math.random()90+1);
+        }while(b==s);
+        do{
+            c=(int)(Math.random()90+1);
+        }while(c==s|c==b);
+        do{
+            d=(int)(Math.random()90+1);
+        }while(d==s|d==b|d==c);
+        do{
+            e=(int)(Math.random()*90+1);
+        }while(e==s|e==b|e==c|e==d);
+        System.out.print(s+" "+b+" "+c+" "+d+" "+e);
+        ssz=0;
+        int[] gsz={s,b,c,d,e};
+        for(int i=t.length-1;i>0;i--){
+            for(int j=2;j<t[i].length;j++){
+                for(int k=0;k<gsz.length;k++){
+                    if(t[i][j]==gsz[k]){
+                        ssz++;
+                    }
+                }
+            }
+            if(ssz==3){
+                System.out.println("\r\n"+t[i][0]+". "+t[i][1]+". hetén "+ssz+" szám talált a generált számokból elsőnek.");
+                ssz=0;
+                break;
+            }else{
+                if(i==1){
+                    System.out.println("\r\nNem volt 3-as találatunk.");
+                }else{
+                    ssz=0;
+                }
+            }
+        }
