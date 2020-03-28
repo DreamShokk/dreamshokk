@@ -1,3 +1,4 @@
+//készítette Illék Kristóf, csak referencia értékként kezelendő.
 import java.io.*;
 import java.util.*;
 public class IllésKristóf10Ddolgozat {
